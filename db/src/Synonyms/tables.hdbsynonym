@@ -1,0 +1,8 @@
+{
+  "DW.db.Synonyms::HR_DATASET": {
+    "target": {
+      "object": "HR_DATASET",
+      "schema": "I855972"
+    }
+  }
+}

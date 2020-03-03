@@ -1,0 +1,18 @@
+{
+	"HANA_DB": {
+		"object_owner": { 
+			"global_roles": [{	
+				"roles": [
+					"HDI_EXTERNAL_ACCESS_G"
+				]}
+			]	
+		},
+		"application_user": {
+			"global_roles": [{
+				"roles": [
+					"HDI_EXTERNAL_ACCESS_G"
+				]}
+			]
+		}
+	}
+}
