@@ -11,8 +11,6 @@ modules:
       properties:
         TARGET_CONTAINER: ~{hdi-container-name}
 
-
-
     - name: cross-container-service-1
       group: SERVICE_REPLACEMENTS
 
