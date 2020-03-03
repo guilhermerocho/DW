@@ -4,5 +4,11 @@
       "object": "HR_DATASET",
       "schema": "I855972"
     }
+  },
+  "DW.db.Synonyms::HOUSES_APPLIED": {
+    "target": {
+      "object": "HOUSES_APPLIED",
+      "schema": "I855972"
+    }
   }
 }
