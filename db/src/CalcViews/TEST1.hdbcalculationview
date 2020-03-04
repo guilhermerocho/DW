@@ -200,7 +200,13 @@
       <keyMapping columnObjectName="TEST" columnName="Performance_Score"/>
     </attribute>
   </attributes>
-  <calculatedAttributes/>
+  <calculatedAttributes>
+    <calculatedAttribute id="CC_ds1" order="48" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+      <keyCalculation datatype="VARCHAR" expressionLanguage="SQL" length="13">
+        <formula>'gui'</formula>
+      </keyCalculation>
+    </calculatedAttribute>
+  </calculatedAttributes>
   <baseMeasures/>
   <calculatedMeasures/>
   <restrictedMeasures/>

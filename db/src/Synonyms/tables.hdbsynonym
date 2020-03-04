@@ -10,5 +10,11 @@
       "object": "HOUSES_APPLIED",
       "schema": "I855972"
     }
+  },
+  "DW.db.Synonyms::VT_S4H_SFLIGHT": {
+    "target": {
+      "object": "VT_S4H_SFLIGHT",
+      "schema": "I855972"
+    }
   }
 }
