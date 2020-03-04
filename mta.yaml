@@ -1,58 +1,41 @@
 ID: DW
 _schema-version: '2.1'
 version: 0.0.1
-
 modules:
- - name: db
-   type: hdb
-   path: db
-   requires:
-    - name: hdi_db
-      properties:
-        TARGET_CONTAINER: ~{hdi-container-name}
-
-    - name: cross-container-service-1
-      group: SERVICE_REPLACEMENTS
-
-      properties:
-        key: ServiceName_1
-        service: ~{the-service-name}
-                          
+  - name: db
+    type: hdb
+    path: db
+    requires:
+      - name: hdi_db
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
+      - name: hdi_db
 
 
+      - name: cross-container-service-1
+        group: SERVICE_REPLACEMENTS
 
-    - name: cross-container-service-2
-      group: SERVICE_REPLACEMENTS
-
-      properties:
-        key: ServiceName_2
-        service: ~{the-service-name}
-                          
+        properties:
+          key: ServiceName_1
+          service: ~{the-service-name}
+                            
 
 
 resources:
- - name: hdi_db
-   parameters:
+  - name: hdi_db
+    parameters:
       service-name: dw_uds
       config:
-         schema: DWCORE
-         makeUniqueName: false
-   properties:
-      hdi-container-name: ${service-name}
-   type: com.sap.xs.hdi-container
+        schema: DWCORE
+        makeUniqueName: false
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container
 
- - name: cross-container-service-1
-   parameters:
-      service-name: dw_uds
-   properties:
-      the-service-name: ${service-name}
-   type: org.cloudfoundry.existing-service
-
-
- - name: cross-container-service-2
-   parameters:
-      service-name: HANA_DB
-   properties:
-      the-service-name: ${service-name}
-   type: org.cloudfoundry.existing-service
+  - name: cross-container-service-1
+    parameters:
+       service-name: HANA_DB
+    properties:
+       the-service-name: ${service-name}
+    type: org.cloudfoundry.existing-service
 

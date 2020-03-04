@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="DW.db.CalcViews::TEST1" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="TEST1"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="DW.db.CalcViews::TEST">
+    <resourceUri>DW.db.CalcViews::TEST</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="DW.db.CalcViews::TEST">
+  <attributes>
+    <attribute id="KxIndex" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="KxIndex"/>
+      <keyMapping columnObjectName="TEST" columnName="KxIndex"/>
+    </attribute>
+    <attribute id="Apply_Date" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Apply_Date"/>
+      <keyMapping columnObjectName="TEST" columnName="Apply_Date"/>
+    </attribute>
+    <attribute id="Build_Date" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Build_Date"/>
+      <keyMapping columnObjectName="TEST" columnName="Build_Date"/>
+    </attribute>
+    <attribute id="Model_Name" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Model_Name"/>
+      <keyMapping columnObjectName="TEST" columnName="Model_Name"/>
+    </attribute>
+    <attribute id="Model_Version" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Model_Version"/>
+      <keyMapping columnObjectName="TEST" columnName="Model_Version"/>
+    </attribute>
+    <attribute id="latitude" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="latitude"/>
+      <keyMapping columnObjectName="TEST" columnName="latitude"/>
+    </attribute>
+    <attribute id="housing_median_age" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="housing_median_age"/>
+      <keyMapping columnObjectName="TEST" columnName="housing_median_age"/>
+    </attribute>
+    <attribute id="total_rooms" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="total_rooms"/>
+      <keyMapping columnObjectName="TEST" columnName="total_rooms"/>
+    </attribute>
+    <attribute id="total_bedrooms" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="total_bedrooms"/>
+      <keyMapping columnObjectName="TEST" columnName="total_bedrooms"/>
+    </attribute>
+    <attribute id="population" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="population"/>
+      <keyMapping columnObjectName="TEST" columnName="population"/>
+    </attribute>
+    <attribute id="households" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="households"/>
+      <keyMapping columnObjectName="TEST" columnName="households"/>
+    </attribute>
+    <attribute id="median_income" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="median_income"/>
+      <keyMapping columnObjectName="TEST" columnName="median_income"/>
+    </attribute>
+    <attribute id="median_house_value" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="median_house_value"/>
+    </attribute>
+    <attribute id="ocean_proximity" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ocean_proximity"/>
+      <keyMapping columnObjectName="TEST" columnName="ocean_proximity"/>
+    </attribute>
+    <attribute id="rr_median_house_value" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="rr_median_house_value"/>
+    </attribute>
+    <attribute id="bar_rr_median_house_value" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="bar_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="bar_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_﻿longitude_rr_median_house_value" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_﻿longitude_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_﻿longitude_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_latitude_rr_median_house_value" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_latitude_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_latitude_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_housing_median_age_rr_median_house_value" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_housing_median_age_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_housing_median_age_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_total_rooms_rr_median_house_value" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_total_rooms_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_total_rooms_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_population_rr_median_house_value" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_population_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_population_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_households_rr_median_house_value" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_households_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_households_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_median_income_rr_median_house_value" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_median_income_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_median_income_rr_median_house_value"/>
+    </attribute>
+    <attribute id="contrib_ocean_proximity_rr_median_house_value" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="contrib_ocean_proximity_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="contrib_ocean_proximity_rr_median_house_value"/>
+    </attribute>
+    <attribute id="outlier_rr_median_house_value" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="outlier_rr_median_house_value"/>
+      <keyMapping columnObjectName="TEST" columnName="outlier_rr_median_house_value"/>
+    </attribute>
+    <attribute id="quantile_rr_median_house_value_10" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="quantile_rr_median_house_value_10"/>
+      <keyMapping columnObjectName="TEST" columnName="quantile_rr_median_house_value_10"/>
+    </attribute>
+    <attribute id="EMPLOYEE_NAME" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="EMPLOYEE_NAME"/>
+    </attribute>
+    <attribute id="Employee_Number" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Employee_Number"/>
+    </attribute>
+    <attribute id="State" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="State"/>
+    </attribute>
+    <attribute id="Zip" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Zip"/>
+    </attribute>
+    <attribute id="DOB" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="DOB"/>
+    </attribute>
+    <attribute id="Age" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Age"/>
+    </attribute>
+    <attribute id="Sex" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Sex"/>
+    </attribute>
+    <attribute id="MaritalDesc" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="MaritalDesc"/>
+    </attribute>
+    <attribute id="CitizenDesc" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="CitizenDesc"/>
+    </attribute>
+    <attribute id="Hispanic_Latino" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Hispanic_Latino"/>
+    </attribute>
+    <attribute id="RaceDesc" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="RaceDesc"/>
+    </attribute>
+    <attribute id="DATE_OF_HIRE" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="DATE_OF_HIRE"/>
+    </attribute>
+    <attribute id="DATE_OF_TERMINATION" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="DATE_OF_TERMINATION"/>
+    </attribute>
+    <attribute id="REASON_FOR_TERM" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="REASON_FOR_TERM"/>
+    </attribute>
+    <attribute id="Employment_Status" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Employment_Status"/>
+    </attribute>
+    <attribute id="DEPARTMENT" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="DEPARTMENT"/>
+    </attribute>
+    <attribute id="Position" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Position"/>
+    </attribute>
+    <attribute id="Pay_Rate" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Pay_Rate"/>
+    </attribute>
+    <attribute id="Manager_Name" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Manager_Name"/>
+    </attribute>
+    <attribute id="Employee_Source" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Employee_Source"/>
+    </attribute>
+    <attribute id="Performance_Score" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription=" "/>
+      <keyMapping columnObjectName="TEST" columnName="Performance_Score"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
