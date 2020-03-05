@@ -1,0 +1,17 @@
+{
+	"role": {
+		"name": "DW.db.Roles::DWCORE_DEV",
+		"schema_privileges": [{
+			"privileges": [ 
+				"SELECT", 
+				"EXECUTE" 
+			]
+		}],
+		
+		"schema_analytic_privileges":[{
+			"privileges": [ 
+				"DW.db.AnalyticPrivileges::teste" 
+			]
+		}]
+	}
+}

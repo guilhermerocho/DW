@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="DW.db.CalcViews::TEST" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="DW.db.CalcViews::TEST" applyPrivilegeType="SQL_ANALYTIC_PRIVILEGE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="TEST"/>
 <localVariables/>
 <variableMappings/>
@@ -42,35 +42,11 @@
       <viewAttribute id="quantile_rr_median_house_value_10"/>
     </viewAttributes>
     <calculatedViewAttributes/>
-    <restrictedViewAttributes/>
     <input node="DW.db.Synonyms::HOUSES_APPLIED">
-      <mapping xsi:type="Calculation:AttributeMapping" target="KxIndex" source="KxIndex"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Apply_Date" source="Apply Date"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Build_Date" source="Build Date"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Model_Name" source="Model Name"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="Model_Version" source="Model Version"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="latitude" source="latitude"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="housing_median_age" source="housing_median_age"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="total_rooms" source="total_rooms"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="total_bedrooms" source="total_bedrooms"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="population" source="population"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="households" source="households"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="median_income" source="median_income"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="median_house_value" source="median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="ocean_proximity" source="ocean_proximity"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="rr_median_house_value" source="rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="bar_rr_median_house_value" source="bar_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_﻿longitude_rr_median_house_value" source="contrib_﻿longitude_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_latitude_rr_median_house_value" source="contrib_latitude_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_housing_median_age_rr_median_house_value" source="contrib_housing_median_age_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_total_rooms_rr_median_house_value" source="contrib_total_rooms_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_population_rr_median_house_value" source="contrib_population_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_households_rr_median_house_value" source="contrib_households_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_median_income_rr_median_house_value" source="contrib_median_income_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="contrib_ocean_proximity_rr_median_house_value" source="contrib_ocean_proximity_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="outlier_rr_median_house_value" source="outlier_rr_median_house_value"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="quantile_rr_median_house_value_10" source="quantile_rr_median_house_value_10"/>
-    </input>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Model_Version" source="Model Version"/></input>
   </calculationView>
   <calculationView xsi:type="Calculation:ProjectionView" id="Projection_2">
     <viewAttributes>
@@ -97,25 +73,10 @@
       <viewAttribute id="Performance_Score"/>
     </viewAttributes>
     <calculatedViewAttributes/>
-    <restrictedViewAttributes/>
     <input node="DW.db.Synonyms::HR_DATASET">
-      <mapping xsi:type="Calculation:AttributeMapping" target="EMPLOYEE_NAME" source="EMPLOYEE_NAME"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Employee_Number" source="Employee Number"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="State" source="State"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="Zip" source="Zip"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="DOB" source="DOB"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="Age" source="Age"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="Sex" source="Sex"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="MaritalDesc" source="MaritalDesc"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="CitizenDesc" source="CitizenDesc"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Hispanic_Latino" source="Hispanic/Latino"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="RaceDesc" source="RaceDesc"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="DATE_OF_HIRE" source="DATE_OF_HIRE"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="DATE_OF_TERMINATION" source="DATE_OF_TERMINATION"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="REASON_FOR_TERM" source="REASON_FOR_TERM"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Employment_Status" source="Employment Status"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="DEPARTMENT" source="DEPARTMENT"/>
-      <mapping xsi:type="Calculation:AttributeMapping" target="Position" source="Position"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Pay_Rate" source="Pay Rate"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Manager_Name" source="Manager Name"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Employee_Source" source="Employee Source"/>
@@ -173,8 +134,7 @@
       <viewAttribute id="Performance_Score"/>
     </viewAttributes>
     <calculatedViewAttributes/>
-    <restrictedViewAttributes/>
-    <input node="Projection_1">
+    <input node="Projection_1" emptyUnionBehavior="NO_ROW">
       <mapping xsi:type="Calculation:AttributeMapping" target="KxIndex" source="KxIndex"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Apply_Date" source="Apply_Date"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Build_Date" source="Build_Date"/>
@@ -223,7 +183,7 @@
       <mapping xsi:type="Calculation:ConstantAttributeMapping" target="Employee_Source" null="true" value=""/>
       <mapping xsi:type="Calculation:ConstantAttributeMapping" target="Performance_Score" null="true" value=""/>
     </input>
-    <input node="Projection_2">
+    <input node="Projection_2" emptyUnionBehavior="NO_ROW">
       <mapping xsi:type="Calculation:ConstantAttributeMapping" target="KxIndex" null="true" value=""/>
       <mapping xsi:type="Calculation:ConstantAttributeMapping" target="Apply_Date" null="true" value=""/>
       <mapping xsi:type="Calculation:ConstantAttributeMapping" target="Build_Date" null="true" value=""/>
@@ -473,21 +433,21 @@
 <layout>
   <shapes>
     <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
-      <upperLeftCorner x="221.11302679000914" y="112"/>
+      <upperLeftCorner x="221" y="112"/>
     
       <rectangleSize width="160"/>
     </shape>
   
     <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="92" y="356.9999988079071"/>
+      <upperLeftCorner x="92" y="356"/>
       <rectangleSize height="30" width="160"/>
     </shape>
     <shape expanded="true" modelObjectName="Projection_2" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="302.00000000000006" y="356.9999988079071"/>
+      <upperLeftCorner x="302" y="356"/>
       <rectangleSize height="30" width="160"/>
     </shape>
     <shape expanded="true" modelObjectName="Union_1" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="221.11302679000914" y="217"/>
+      <upperLeftCorner x="221" y="217"/>
       <rectangleSize height="30" width="160"/>
     </shape>
   </shapes>

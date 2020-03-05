@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Privilege:analyticPrivilege xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:AccessControl="http://www.sap.com/ndb/SQLCoreModelAccessControl.ecore" xmlns:Privilege="http://www.sap.com/ndb/BiModelPrivilege.ecore" id="DW.db.AnalyticPrivileges::teste" privilegeType="SQL_ANALYTIC_PRIVILEGE" schemaVersion="1.1">
+<descriptions defaultDescription="teste"/>
+<securedModels>
+  <modelUri>DW.db.CalcViews::TEST</modelUri>
+</securedModels>
+<restriction>
+  <filter attributeName="EMPLOYEE_NAME" xsi:type="Privilege:AttributeFilter">
+    <valueFilter xsi:type="AccessControl:SingleValueFilter" including="true" value=""/>
+  </filter>
+  <attributeName>EMPLOYEE_NAME</attributeName>
+  <originInformationModelUri>DW.db.CalcViews::TEST</originInformationModelUri>
+</restriction>
+</Privilege:analyticPrivilege>
